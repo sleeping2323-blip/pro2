@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - กชกร เเก้วทวี</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Tahoma, sans-serif;
+            background: #f0f4ff;
+            color: #24304a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #243b80, #647eea);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 30px;
+        }
+
+        header p {
+            margin: 5px;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            background: #fff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px #243b8015;
+        }
+
+        h2 {
+            color: #344eaa;
+            margin-top: 0;
+        }
+
+        .school-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .school-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px #243b8015;
+            transition: 0.3s;
+        }
+
+        .school-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .school-card a {
+            color: inherit;
+            text-decoration: 
+            display: block;
+        }
+
+        .school-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .school-info {
+            padding: 18px;
+        }
+
+        .school-info h3 {
+            color: #344eaa;
+            margin: 0 0 8px;
+        }
+
+        .click-text {
+            color: #647eea;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #243b80;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 650px) {
+            .school-list {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- รูปตัวเอง -->
+        <img
+            class="profile-photo"
+            src="mo.png"
+            alt="รูปนางสาวกชกร แก้วทวี"
+        >
+
+        <h1>นางสาว กชกร เเก้วทวี</h1>
+        <p>รหัสนักศึกษา: 69319090064</p>
+        <p>แฟ้มสะสมผลงาน (Portfolio)</p>
+    </header>
+
+    <main class="container">
+
+        <!-- เกี่ยวกับฉัน -->
+        <section class="card">
+            <h2>🙋 เกี่ยวกับฉัน</h2>
+            <p>
+                สวัสดีค่ะ ชื่อ กชกร เเก้วทวีค่ะ
+                รหัสนักศึกษา 69319090064
+                เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำตัว
+                และแสดงประวัติการศึกษาของหนูค่ะ
+            </p>
+        </section>
+
+        <!-- ประวัติการศึกษา -->
+        <section class="card">
+            <h2>🎓 ประวัติการศึกษา</h2>
+
+
+
+            <div class="school-list">
+
+                <!-- โรงเรียนคลองขลุงราษฎร์รังสรรค์ -->
+                <article class="school-card">
+                    <a
+                        href="https://kkrs.ac.th/mainpage"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="khongkhun.jpg"
+                            alt="โรงเรียนคลองขลุงราษฎร์รังสรรค์"
+                        >
+
+                        <div class="school-info">
+                            <h3>โรงเรียนคลองขลุงราษฎร์รังสรรค์</h3>
+                            <p>สถานศึกษาระดับโรงเรียน</p>
+                            <p class="click-text">
+                                คลิกเพื่อเข้าเว็บไซต์โรงเรียน →
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                
+<!-- ช่องที่ 3 Google Maps -->
+<article class="school-card">
+    <a
+        href="https://www.google.com/maps/search/?api=1&query=วิทยาลัยเทคนิคนครสวรรค์"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <img
+            src="https://maps.googleapis.com/maps/api/staticmap?center=Nakhon+Sawan+Technical+College&zoom=15&size=600x400&maptype=roadmap"
+            alt="Google Maps วิทยาลัยเทคนิคนครสวรรค์"
+            onerror="this.src='Technical.jpg'"
+        >
+
+        <div class="school-info">
+            <h3>📍 Google Maps</h3>
+            <p>แผนที่วิทยาลัยเทคนิคนครสวรรค์</p>
+            <p class="click-text">
+                คลิกเพื่อเปิด Google Maps →
+            </p>
+        </div>
+    </a>
+</article>
+
+
+                <!-- วิทยาลัยเทคนิคนครสวรรค์ -->
+                <article class="school-card">
+                    <a
+                        href="https://www.nkstec.ac.th/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="Technical.jpg"
+                            alt="วิทยาลัยเทคนิคนครสวรรค์"
+                        >
+
+                        <div class="school-info">
+                            <h3>วิทยาลัยเทคนิคนครสวรรค์</h3>
+                            <p>สถานศึกษาระดับอาชีวศึกษา</p>
+                            <p class="click-text">
+                                คลิกเพื่อเข้าเว็บไซต์วิทยาลัย →
+                            </p>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ทักษะ -->
+        <section class="card">
+            <h2>💻 ทักษะและความสามารถ</h2>
+            <ul>
+                <li>การใช้คอมพิวเตอร์เบื้องต้น</li>
+                <li>การใช้งาน HTML เบื้องต้น</li>
+                <li>การค้นคว้าหาความรู้ผ่านอินเทอร์เน็ต</li>
+                <li>การเรียนรู้และพัฒนาตนเอง</li>
+            </ul>
+        </section>
+<!-- ปุ่มรูปภาพกลับไปหน้าแรก -->
+<div style="text-align: center; margin: 30px 0;">
+    <a href="index.html" title="กลับไปหน้าแรก">
+       
+          <img
+            src="home.png"
+            alt="กลับไปหน้าแรก"
+            width="70"
+            height="70"
+            style="object-fit: contain; cursor: pointer;"
+        >
+    </a>
+   
+</div>
+    </main>
+
+    <footer>
+        <p>Portfolio | นางสาว กชกร เเก้วทวี</p>
+        <p>รหัสนักศึกษา 69319090064</p>
+    </footer>
+
+</body>
+</html>
